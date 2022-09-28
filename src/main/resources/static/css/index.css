@@ -1,0 +1,65 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 27 sep. 2022, 19:14:03
+    Author     : axelc
+*/
+
+/* se usa . para definir el class y dentro los brackets*/
+.block{
+    
+    background-color: papayawhip; /*color de fondo del div*/
+    width: 200px; /*ancho*/
+    height: 200px; /*alto*/
+    
+    /*margin: espaciado de un div a otro div*/
+    
+    /*padding: establece el espacio de relleno requerido por todos los lados de un elemento*/
+    padding: 20px;
+    /*border: espacion final de la imagen*/
+    border: 20px solid blue;
+    box-sizing: border-box;
+}
+
+.static{
+    /*todas las etiquetas no se van a ver afectadas, se acomoda segun el flujo de la web*/
+    position: static;
+    border: 3px solid blue;
+    top:400px;
+    left: 50px;
+    
+    
+}
+.relative{
+    /*si se ve afectado por todas las diferentes posiciones top, left
+    si se posiciona donde uno le indica
+    */
+    position: relative;
+    border: 3px solid green;
+    top:400px;
+    left: 500px;
+    width: 200px;
+    height: 200px;
+    
+    
+}
+.absolute{
+    /*depende de quien sea su padre mas cercano, depende de otros donde se encuentre contenido*/
+    position: absolute;
+    border: 3px solid red;
+    top:400px;
+    left: 500px;
+    
+    
+}
+.fixed{
+    /*depende de quien sea su padre mas cercano, depende de otros donde se encuentre contenido*/
+    position: fixed;
+    border: 3px solid red;
+    top:400px;
+    left: 500px;
+    
+    
+}

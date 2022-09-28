@@ -2,17 +2,60 @@
 
 <html>
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WEB</title>
+        <link rel="stylesheet" href="css/index.css"/>
     </head>
     <!-- SEO/ search engine optimization -->
     <!-- guia si la pagina esta bien implementada o no -->
     <body>
-        <h1>Pagina inicial</h1>
-        <h2>Pagina inicial</h2>
-        <h3>Pagina inicial</h3>
-        <h4>Pagina inicial</h4>
+        
+        <header>
+            <p> header: Es como el menu de interaccion en la parte superior de la web</p>
+            <nav>
+                <p>NAV: representa una sección de una página cuyo propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual o a otros documentos</p>
+                <img src="direccion de la imagen" alt="texto que sale si la imagen no carga"/>
+            </nav>
+        </header>
+        
+        <div class="block">
+            <h1>BLOQUE</h1>
+        </div>
+        <div id="block"> <!-- si usa id es unico y todo los id van a ser afectados -->
+            <h1>BLOQUE</h1>
+        </div>
+        
+        <div class="static">Esto es estatico</div>
+        <div class='relative'>
+            Relativo
+            <div class='abosolute'>Absoluto</div>
+            </div>
+        <div class='abosolute'>Absoluto</div>
+        
+        <div class='fixed'>fixed</div>
+        
+        <!-- div para englobar etiquetas generico -->
+        <!-- agrupa info que no es relevante entre ella misma -->
+        <div>
+            
+            <h1>Pagina inicial</h1>
+            <h2>Pagina inicial</h2>
+            <h3>Pagina inicial</h3>
+        
+        </div>
+        <!-- lo mismo que el div  -->
+        
+        <!-- cuando tenga relacion con un mismo tema, ejemplo, reseña de peli en foro pasarla a otra pagina que tenga relacion -->
+        <!-- tiene mismo contexto. -->
+        <article>
+            <h4>Se puede usar en el mismo contexto </h4>
+        </article>
+        
+        <!-- se utiliza cuando tenemos una agrupacion con un sentido logico, con la  -->
+        <!-- condicion que tenga que ver SOLO con la misma pagina para poner informacion -->
+        <section>
+            <h4>Agrupacion con sentido logico, con la condicion que solo info con la misma pagina </h4>
+            
+        </section>
         <!-- usar correctamente la semantica -->
         <p>Esta es la primera pagina de curso Web y patrones...</p>
         <!-- lista desordenada -->
@@ -28,9 +71,11 @@
             <li>third</li>
 
         </ol>
+        
         <!-- el "Hola mundo es el shortcut" -->
         <!-- absoluto: global --> <!-- relativo: esta en el mismo server -->
-        <a href="">Hola mundo</a>
+        <a href="home.html">LINK</a>
+        
     </body>
     
     <footer>
