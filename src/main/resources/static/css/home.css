@@ -7,18 +7,20 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     Author     : axelc
 */
 
-/*@import del font*/
+/*@import url (link)*/
 
-*{
-    
-    
+*{/*selector universal- estilos*/
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+   /*font-family: */
 }
 
 header{
     width: 100%;
     height: 15vh;
     margin: auto;
-    display: flex; /*como se desplegan los elementos*/
+    display: flex; /*como se desplegan los elementos - bloque de nivel*/
     align-items: center;/*como se van a disponer uno con el otro*/
     
 }
@@ -34,9 +36,9 @@ nav{
     
     
 }
-nav ul li{
-    display: incline-block;
-    list-style: none;
+nav ul li{/*disposicion de etiquetas que tenemos en la pagina*/
+    display: inline-block;
+    list-style: none;/*los puntos al lado de las opciones*/
     margin: 0px 20px;
         
     

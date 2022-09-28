@@ -55,7 +55,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     
 }
 .fixed{
-    /*depende de quien sea su padre mas cercano, depende de otros donde se encuentre contenido*/
+    /*Se mueve con la pantalla, relativa al punto de vista del usuario*/
     position: fixed;
     border: 3px solid red;
     top:400px;
