@@ -5,6 +5,7 @@
 package com.tienda.service;
 
 import com.tienda.entity.Pais;
+import com.tienda.entity.Persona;
 import java.util.List;
 
 /**
@@ -12,5 +13,8 @@ import java.util.List;
  * @author axelc
  */
 public interface iPersonaService {
-    public List<Pais> getCountry(); // guarda los valores de la table en List
+    public List<Persona> getAllPersona();
+    public Persona getPersonaById (long id);
+    public void savePersona(Persona persona);
+    public void delete(long id);
 }
