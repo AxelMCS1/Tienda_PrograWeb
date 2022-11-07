@@ -48,9 +48,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 Featured
             </div>
             <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title">Uso administrativo</h5>                
+                <a href="personaN" class="btn btn-primary">Añadir persona</a>
             </div>
             <a th:with="urlBuilder=${T(org.springframework.web.servlet.support.ServletUriComponentsBuilder).fromCurrentRequest()}"
                th:href="${urlBuilder.replaceQueryParam('lang','es').toUriString()}">ES</a>
