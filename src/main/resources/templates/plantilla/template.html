@@ -3,7 +3,8 @@
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
 -->
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://thymeleaft.org/extras/spring-security">
     <head th:fragment="head">
         <title>Mi tienda</title>
         <meta charset="UTF-8">
@@ -22,16 +23,16 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" href="#" th:href="@{~/index}">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                        <li sec:authorize="isAuthenticated()" class="nav-item">
+                            <a class="nav-link" href="#" th:href="@{~/profile/index}">Profile</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                        <li sec:authorize="hasRole('ROLE_USER')"class="nav-item">
+                            <a class="nav-link" href="#" th:href="@{~/admin/index}">User</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
+                        <li sec:authorize="hasAnyRole('ROLE_USER','ROLE_MANAGER')"class="nav-item">
+                            <a class="nav-link" href="#" th:href="@{~/managment/index}">ADMIN</a>
                         </li>
                     </ul>
                 </div>
@@ -41,7 +42,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     <body>
         <div class="container"></div>
     </body>
-    
+
     <footer th:fragment="footer">
         <div class="card">
             <div class="card-header">
